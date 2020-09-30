@@ -3,6 +3,7 @@
 ## Description
 
 This Project for convert PSD file to a Web page responsive with all type screen
+Building from scratch without using CSS Framework for developing responsive website.
 
 ## Development
 
