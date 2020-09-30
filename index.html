@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cnvert PSD to HTMl</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , inital-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Open+Sans&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!--NavBar Script -->
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <!--Social nav-->
+      <section class="topHeader">
+        <div class="innerHeder">
+          <div class="social">
+            <ul>
+              <li>
+                <a href=""> <i class="fa fa-facebook-square"></i> </a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-google-plus-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-linkedin-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-slack"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="search">
+            <form action="">
+              <input type="text" placeholder="  Search Our Website ..." />
+              <button>SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--Logo-->
+      <section class="logoSection">
+        <div class="logo">
+          <img src="./image/logo1.png" alt="logo header" />
+        </div>
+      </section>
+      <!--Navbar-->
+      <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active" style="font-size: 20px">Menu</a>
+          <div id="myLinks">
+            <a href="">HOME</a>
+            <a href="">STYLE DEMO</a>
+            <a href="">FULL WIDTH</a>
+            <a href="">DROPDOWN</a>
+            <a href="">PORTFOLIO</a>
+            <a href="">GALLERY</a>
+            <a href="">LONG TEXT LINK</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
+        <!-- End smartphone / tablet look -->
+      </div>
+      <section class="navSection">
+        <nav>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">STYLE DEMO</a></li>
+            <li><a href="">FULL WIDTH</a></li>
+            <li><a href="">DROPDOWN</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="">LONG TEXT LINK</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <!--Slider-->
+    <section class="slider">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <img src="./image/doctype-hi-res.png" style="width: 100%" />
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">2 / 3</div> -->
+          <img
+            src="./image/element5-digital-352043-unsplash.png"
+            style="width: 100%"
+          />
+          <!-- <div class="text">Caption Two</div> -->
+        </div class="np">
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <!-- <span class="dot" onclick="currentSlide(3)"></span>  -->
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+    </section>
+    <!--Welcome-->
+    <section class="welcome">
+      <div class="welcomeContent">
+        <div class="left">
+          <h3>Who We Are</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            fringilla quam ante, eu placerat enim consequat at. Vivamus dui
+            orci, posuere et nisl eu, maximus lacinia quam. Nullam justo libero,
+            volutpat quis feugiat congue, euismod utmagna.
+          </p>
+          <p>
+            Sed mollis blandit sollicitudin. Suspendisse mi justo, efficitur
+            eget hendrerit ac, auctor a enim. Aenean aliquet erat non dui
+            tincidunt tincidunt. Donec ligula lacus, tincidunt quis bibendum sit
+            amet, egestas at neque.
+          </p>
+          <a href="#">READ MORE &#10095;</a>
+        </div>
+        <div class="right">
+          <img src="./image/computer-472016_1920.png" alt="welcome image" />
+        </div>
+      </div>
+    </section>
+    <!--Service-->
+    <section class="service">
+      <div class="innerService">
+        <h2 class="title">Our Service</h2>
+        <p class="subTitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <div class="serviceItem">
+          <div class="item">
+            <h3>01</h3>
+            <h4><a href="#">Tactical Network Emulation </a></h4>
+            <p>
+              Ad hoc Research Associates has one of the most innovative
+              solutions for visualizing network situational...
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>02</h3>
+            <h4><a href="#">Tactical Network Emulation </a></h4>
+            <p>
+              Ad hoc Research Associates has one of the most innovative
+              solutions for visualizing network situational...
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>03</h3>
+            <h4><a href="#">Tactical Network Emulation </a></h4>
+            <p>
+              Ad hoc Research Associates has one of the most innovative
+              solutions for visualizing network situational...
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>04</h3>
+            <h4><a href="#">Tactical Network Emulation </a></h4>
+            <p>
+              Ad hoc Research Associates has one of the most innovative
+              solutions for visualizing network situational...
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>05</h3>
+            <h4><a href="#">Tactical Network Emulation </a></h4>
+            <p>
+              Ad hoc Research Associates has one of the most innovative
+              solutions for visualizing network situational...
+            </p>
+          </div>
+
+          <div class="item">
+            <h3>06</h3>
+            <h4><a href="#">Tactical Network Emulation </a></h4>
+            <p>
+              Ad hoc Research Associates has one of the most innovative
+              solutions for visualizing network situational...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Contact-->
+    <section class="contact">
+      <div class="form">
+        <form action="">
+          <p>Quick Contact</p>
+          <input type="text" placeholder=" Name *" />
+          <input type="email" placeholder=" Email *" />
+          <input type="number" placeholder=" Phone" />
+          <input type="text" placeholder=" Company" />
+          <textarea placeholder=" Message"></textarea>
+          <button>CONTACT NOW</button>
+        </form>
+      </div>
+    </section>
+    <!--Footer-->
+    <section class="footer">
+      <div class="logo">
+        <img src="./image/logo2.png" alt="logo header" />
+        <p><span>©</span>All Rights Reserved By Ali Hossain</p>
+      </div>
+    </section>
+  </body>
+</html>
